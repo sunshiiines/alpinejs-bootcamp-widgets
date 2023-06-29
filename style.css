@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(35, 36, 35);
+}
+.blocks {
+    display: flex;
+}
+.block {
+    flex : 1;
+    border: 1px solid grey;
+    padding:  1em;
+    margin:  1em;
+    border-radius: 1em;
+}
+.this {
+    background-color: black;
+    border: 1px solid pink;
+    padding: 1em;
+    margin-bottom: 1em ;
+    border-radius: 0.5em;
+}
+section {
+    background-color: rgba(189, 186, 186, 0.24);
+    text-align:center;
+     
+}
+h1 {
+    color: pink;
+    text-align:center;
+}
+h2 {
+    color: palevioletred;
+}
+.message {
+    color: rgb(247, 28, 247);
+}
+button{
+    color: blanchedalmond;
+    background-color: purple;
+    padding: 0,5em;
+    border-radius: 0.5em;
+}
+input {
+    background-color: rgb(231, 178, 196);
+    border-radius: 0.5em;
+}
