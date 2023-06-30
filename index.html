@@ -33,7 +33,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section class="block message">
             <h2>Enough Airtime Widget</h2>
             <div class="block" x-data="{ 
@@ -70,8 +70,8 @@
 
         <section class="block message">
             <h2>Transport Fee Widget</h2>
-            <form>
-                <div class="time">
+            
+                <div class="block">
                   <label for="morning">Morning:</label>
                   <input type="radio" id="morning" name="time" value="morning">
             
@@ -80,18 +80,16 @@
             
                   <label for="nightshift">Night Shift:</label>
                   <input type="radio" id="nightshift" name="time" value="nightshift">
-                </div>
             
-                <div class="button">
                   <button type="button" onclick="calculateFee()">ENTER</button><br><br>
-                </div>
-            
+                
                 <div>
                   <label for="totalFee">Total Fee:</label>
                   <input class="this" type="text" id="totalFee" name="totalFee" readonly><br><br>
                 </div>
-              </form>
-    <hr>
+            </div>
+            
+
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
 </body>
 
