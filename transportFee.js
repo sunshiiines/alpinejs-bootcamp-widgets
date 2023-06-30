@@ -13,7 +13,7 @@ function transportFee() {
       case "afternoon":
         return "R10";
       case "nightshift":
-        return "free";
+        return "Free";
     }
   }
 

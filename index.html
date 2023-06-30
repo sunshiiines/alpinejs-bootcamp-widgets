@@ -13,12 +13,12 @@
 </head>
 
 <body>
-    <h1>AlpineJS widgets for Bootcamp functions</h1>
+    <h1>AlpineJS Widgets for Bootcamp Functions</h1>
     <hr>
 
     <div class="blocks">
         <section class="block ">
-            <h2>Greet widget</h2>
+            <h2>Greet Widget</h2>
             <div class="block message" x-data="{
                 greetMessage : '',
                 username : '',
@@ -26,16 +26,16 @@
                     this.greetMessage = greet(this.username);
                 }
             }">
+                Greet this name: <input x-model="username" type="text" placeholder="e.g. John Doe">
+                <button x-on:click="greetMe()">GREET</button><br><br>
                 <div class="this" x-text="greetMessage">
                     Greeting goes here...
                 </div>
-                Greet this name: <input x-model="username" type="text" placeholder="e.g. John Doe">
-                <button x-on:click="greetMe()">Greet!</button>
             </div>
         </section>
 
         <section class="block message">
-            <h2>Enough Airtime widget</h2>
+            <h2>Enough Airtime Widget</h2>
             <div class="block" x-data="{ 
                 projectedUsage: '', 
                 availAirtime: '', 
@@ -48,7 +48,7 @@
                 <input type="number" id="avail-airtime" x-model="availAirtime" placeholder="5.00">
                 <br>
                 <button x-on:click="remainingAirtime = calculateRemainingAirtime(projectedUsage, availAirtime)">
-                    Calculate
+                    CALCULATE
                 </button>
                 <p class="this" x-text="'Remaining Airtime: ' + remainingAirtime"></p>
             </div>
@@ -59,17 +59,17 @@
     <hr>
     <div class="blocks">
         <section class="block message">
-            <h2>Total Phone Bill widget</h2>
+            <h2>Total Phone Bill Widget</h2>
             <div class="block">
                 <label for="billList">Calls and SMSes</label>
                 <input type="text" id="billList" placeholder="Enter phone string">
-                <button onclick="totalPhoneBill()">Enter</button>
+                <button onclick="totalPhoneBill()">ENTER</button><br><br>
                 <div class="this" id="totalBill"></div>
             </div>
         </section>
 
         <section class="block message">
-            <h2>Transport Fee widget</h2>
+            <h2>Transport Fee Widget</h2>
             <form>
                 <div class="time">
                   <label for="morning">Morning:</label>
@@ -86,9 +86,9 @@
                   <button type="button" onclick="calculateFee()">ENTER</button><br><br>
                 </div>
             
-                <div class="fee">
+                <div>
                   <label for="totalFee">Total Fee:</label>
-                  <input type="text" id="totalFee" name="totalFee" readonly><br><br>
+                  <input class="this" type="text" id="totalFee" name="totalFee" readonly><br><br>
                 </div>
               </form>
     <hr>

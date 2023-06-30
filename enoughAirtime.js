@@ -1,4 +1,3 @@
-
     function calculateRemainingAirtime(projectedUsage, availAirtime) {
       let usage = projectedUsage.split(', ');
       let totalUsage = 0;
